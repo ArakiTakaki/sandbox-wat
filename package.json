@@ -1,0 +1,16 @@
+{
+  "name": "sandbox-wat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ArakiTakaki/sandbox-wat.git",
+  "author": "ArakiTakaki <araki_takaki@yahoo.co.jp>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist && mkdir dist",
+    "build": "wat2wasm  src/main.wat --output dist/main.wasm"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "wat2wasm": "^1.0.2"
+  }
+}
