@@ -6,10 +6,12 @@
   "author": "ArakiTakaki <araki_takaki@yahoo.co.jp>",
   "license": "MIT",
   "scripts": {
+    "start": "browser-sync start -s --directory src",
     "prebuild": "rimraf dist && mkdir dist",
     "build": "wat2wasm  src/main.wat --output dist/main.wasm"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "rimraf": "^3.0.2",
     "wat2wasm": "^1.0.2"
   }
