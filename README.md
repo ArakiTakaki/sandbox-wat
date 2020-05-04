@@ -1,26 +1,9 @@
 # sandbox-wat
 
-## 概要
+## getting started
 
-`wasm`にコンパイルできる(もしくはデバッグツールを確認する際に可視化される)`wat`ですが、スタックマシンのように記述したり、S式のように記述したりできます。
-
-今回はS式のみを使用し、いろいろ表現していきます。
-
-## 型に関して
-
-`int` と `float` 型しか持ちません
-
-- i32
-- i64
-- f32
-- f64
-
-
-
-type	関数の型を宣言する
-import	外部から関数やデータを読み込み、wasm内で使えるように定義する
-func	関数を定義する
-global	グローバル変数を宣言する
-export	外部に関数やデータをエクスポート
-elem	テーブルの値を定義する
-data	メモリの初期値を定義する
+1. `$ yarn install`
+2. `$ yarn build`
+3. `$ yarn start`
+4. `$ open http://localhost:3000`
+5. GoogleChromeのコンソールを開く
